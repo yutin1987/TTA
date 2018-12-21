@@ -71,7 +71,7 @@
               <li>
                 <div class="title text-small">Get In Touch</div>
                 <div class="content">info@taiwanarena.tech</div>
-              </li>`
+              </li>
               <li>
                 <div class="title text-small">For Event Inquires</div>
                 <div class="content">event@taiwanarena.tech</div>
@@ -156,33 +156,35 @@
 		</div>
 	</div>
 	<div class="tta-figures-container">
-		<div class="row">
-			<div class="col-12 col-sm-3">
-				<div class="circle">
-					<div class="figure">3193</div>
-					<div class="unit">of 24-hour space</div>
-					<a href="events.html">see all <i class="link-classic white__cyan"></i></a>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-3">
+					<div class="circle">
+						<div class="figure">3193<span>m</span></div>
+						<div class="unit">of 24-hour space</div>
+						<a href="events.html">see all <i class="link-classic white__cyan"></i></a>
+					</div>
 				</div>
-			</div>
-			<div class="col-12 col-sm-3">
-				<div class="circle">
-					<div class="figure">10</div>
-					<div class="unit">PROGRAMS</div>
-					<a href="programs.html">see all <i class="link-classic white__cyan"></i></a>
+				<div class="col-12 col-sm-3">
+					<div class="circle">
+						<div class="figure">10</div>
+						<div class="unit">PROGRAMS</div>
+						<a href="programs.html">see all <i class="link-classic white__cyan"></i></a>
+					</div>
 				</div>
-			</div>
-			<div class="col-12 col-sm-3">
-				<div class="circle">
-					<div class="figure">100</div>
-					<div class="unit">TEAMS</div>
-					<a href="teams.html">see all <i class="link-classic white__cyan"></i></a>
+				<div class="col-12 col-sm-3">
+					<div class="circle">
+						<div class="figure">100</div>
+						<div class="unit">TEAMS</div>
+						<a href="teams.html">see all <i class="link-classic white__cyan"></i></a>
+					</div>
 				</div>
-			</div>
-			<div class="col-12 col-sm-3">
-				<div class="circle">
-					<div class="figure">52</div>
-					<div class="unit">PARTNERS</div>
-					<a href="partners.html">see all <i class="link-classic white__cyan"></i></a>
+				<div class="col-12 col-sm-3">
+					<div class="circle">
+						<div class="figure">52</div>
+						<div class="unit">PARTNERS</div>
+						<a href="partners.html">see all <i class="link-classic white__cyan"></i></a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -219,18 +221,19 @@
 		<div class="blur-bg"></div>
 		<div class="container">
 			<div class="title-slogan">Never miss an announcement</div>
-			<form class="email-form">
+			<form class="email-form needs-validation" novalidate>
 				<div class="input-group mb-3 input-subscribe">
-				  	<input type="text" class="form-control tta-input" placeholder="Email address*" aria-label="Email address*" aria-describedby="button-addon2">
-					<a href="javascrip:;" class="btn btn-outline-secondary tta-btn-primary" id="button-addon2">SIGN UP FOR OUR NEWSLETTER</a>
+				  	<input type="text" class="form-control tta-input" placeholder="Email address*" aria-label="Email address*">
+					<button class="btn btn-outline-secondary tta-btn-primary" id="EDM_submit" type="submit" >SIGN UP FOR OUR NEWSLETTER</button>
 				</div>
-				<div class="input-group input-radio-group">
-					<label class="label-text">I wish to receive email notifications from Taiwan Tech Arena, including upcoming promotions,discounted tickets, news about our conferences, and access to exclusive</label>
-				    <div class="input-group-text">
-				    	<label><input type="radio" name="access1">YES</label>
-				      	<label><input type="radio" name="access1">NO</label>
-				    </div>
-				  </div>
+				<div class="form-check">
+				  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+				  <label class="form-check-label" for="defaultCheck1">
+				    I wish to receive email notifications from Taiwan Tech Arena, including upcoming promotions,discounted tickets, news about our conferences, and access to exclusive
+				  </label>
+			      <div class="valid-feedback">
+			        Looks good!
+			      </div>
 				</div>
 			</form>
 		</div>
@@ -267,10 +270,10 @@
   			<a href="https://twitter.com/TaiwanTechArena" target="_blank"><i class="fab fa-twitter"></i></a>
   			<a href="https://www.facebook.com/taiwantecharena/" target="_blank"><i class="fab fa-facebook-f"></i></a>
   		</div>
-  		<div class="col-4 col-md-3 tta-privacy">
+  		<div class="col-5 col-md-3 tta-privacy">
   			<a href="privacy.html">PRIVACY POLICY</a>
   		</div>
-  		<div class="col-8 col-md-3 tta-copyright">
+  		<div class="col-7 col-md-3 tta-copyright">
   			Copyright TAIWAN TECH ARENA. All Rights Reserved.
   		</div>
   	</div>
@@ -288,5 +291,24 @@
 
 <script type="text/javascript" src="/js/index.js"></script>
 <script type="text/javascript" src="/js/load-index-event-data.js"></script>
+<script type="text/javascript">
+	(function() {
+	  'use strict';
+	  window.addEventListener('load', function() {
+	    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+	    var forms = document.getElementsByClassName('needs-validation');
+	    // Loop over them and prevent submission
+	    var validation = Array.prototype.filter.call(forms, function(form) {
+	      form.addEventListener('submit', function(event) {
+	        if (form.checkValidity() === false) {
+	          event.preventDefault();
+	          event.stopPropagation();
+	        }
+	        form.classList.add('was-validated');
+	      }, false);
+	    });
+	  }, false);
+	})();
+</script>
 </body>
 </html>

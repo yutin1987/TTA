@@ -16,13 +16,13 @@ $(function(){
 	        lastScrollTop = $(window).scrollTop();
 	        console.log(lastScrollTop)
 	        $body.css({'top': -lastScrollTop});
-	        $body.css({"overflow-y":"hidden","position":"fixed"});
+	        $body.css({"overflow-y":"hidden"});
 	        
 
 	    }).on('hide.bs.collapse',function(){
 
 	        bodyScrollLock.clearAllBodyScrollLocks()
-	        $body.css({"overflow":"visible","position":"relative"});
+	        $body.css({"overflow-y":"visible","overflow-x":"hidden"});
 	        navWrap.removeClass('moved');
 	        //$body.css({'top': 'auto'});
 	        //$(window).scrollTop(lastScrollTop);
