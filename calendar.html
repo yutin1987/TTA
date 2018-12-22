@@ -23,7 +23,8 @@
 </head>
 
 
-                <div class="dots-css-bg"></div>
+                <link href="/libs/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css" />
+<div class="dots-css-bg"></div>
 <link href="/libs/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css" />
 
 <nav class="navbar navbar-light fixed-top tta-navbar">
@@ -113,7 +114,7 @@
 				<a href="javascript:;" data-calendar-nav="today">Today</a>
 				<a href="javascript:;" data-calendar-nav="prev"><i class="fal fa-angle-left"></i></a>
 				<a href="javascript:;" data-calendar-nav="next"><i class="fal fa-angle-right"></i></a>
-				<a class="tta-filter-dropdown dropdown-toggle nowyear" id="datepicker">All Dates</a>
+				<a class="tta-filter-dropdown dropdown-toggle nowyear"><span class="getMonth">All Dates</span><input class="ghost-input" name="" id="datepicker"></a>
 			    <div class="dropdown-menu">
 					<a class="active" data-calendar-view="month">Month</a>
 					<a data-calendar-view="week">Week</a>
@@ -127,7 +128,8 @@
 			    <div class="dropdown-menu">
 					<a href="javascript:;" class="active" data-calendar-view="month">Month</a>
 					<a href="javascript:;" data-calendar-view="week">Week</a>
-					<a href="javascript:;" data-calendar-view="day">Agenda</a>
+					<a href="javascript:;" data-calendar-view="day">Day</a>
+					<a href="javascript:;" data-calendar-view="agenda">Agenda</a>
 			    </div>
 			  </div>
 			</div>
@@ -183,11 +185,8 @@
 <script type="text/javascript" src="/libs/jquery.min.js"></script>
 <script type="text/javascript" src="/libs/ie10-viewport-bug-workaround.js"></script>
 <script type="text/javascript" src="/libs/popper.min.js"></script>
-<script type="text/javascript" src="/libs/slick.js"></script>
 <script type="text/javascript" src="/libs/bodyScrollLock.js"></script>
 <script type="text/javascript" src="/libs/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/plugins/ScrollToPlugin.min.js"></script>
 <script type="text/javascript" src="/js/application.js"></script>
 
 
@@ -197,13 +196,26 @@
 <script type="text/javascript" src="libs/bootstrap-datetimepicker.min.js"></script>
 <script type="text/javascript">
    $(function () {
-        $('#datepicker').datepicker({
+
+   		var _datepicker = $('#datepicker');
+
+        _datepicker.datepicker({
             uiLibrary: 'bootstrap4',
             iconsLibrary: 'fontawesome',
 	        icons: {
 	             rightIcon: '<span class="fal fa-angle-down"></span>'
 	        }
         });
+
+        _datepicker.bind('change',function(){
+
+        	        var v = _datepicker.val()
+
+        console.log('datepicker=',v)
+
+        	        })
+
+
     });
 </script>
 <script type="text/javascript">
@@ -212,11 +224,11 @@
 		"use strict";
 
 		var options = {
-			events_source: 'events.json.php',
+			events_source: '/json/events.json.php',
 			view: 'month',
-			tmpl_path: 'tmpls/',
+			tmpl_path: '/tmpls/',
 			tmpl_cache: false,
-			day: '2018-12-20',
+			day: '2018-09-18',
 			onAfterEventsLoad: function(events) {
 				if(!events) {
 					return;
@@ -224,14 +236,24 @@
 				var list = $('#eventlist');
 				list.html('');
 
+				//console.log(events)
+
 				$.each(events, function(key, val) {
+					var e = '<a href="' + val.url + '">' + val.title + '</a>';
 					$(document.createElement('li'))
-						.html('<a href="' + val.url + '">' + val.title + '</a>')
+						.html(e)
 						.appendTo(list);
+
+					console.log(key,val)
 				});
+
+								var reverse = moment.utc("2018-09-15 19:30").valueOf()
+
+				console.log(reverse)
+
 			},
 			onAfterViewLoad: function(view) {
-				$('.filter-selector .nowyear').text(this.getTitle());
+				$('.filter-selector .nowyear .getMonth').text(this.getTitle());
 				$('.filter-selector .input-group a').removeClass('active');
 				$('a[data-calendar-view="' + view + '"]').addClass('active');
 			},
@@ -271,7 +293,7 @@
 			calendar.view();
 		});
 
-		$('#events-in-modal').change(function(){
+		$('#exampleModal').change(function(){
 			var val = $(this).is(':checked') ? $(this).val() : null;
 			calendar.setOptions({modal: val});
 		});
