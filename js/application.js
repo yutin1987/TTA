@@ -14,7 +14,6 @@ $(function(){
 	        var $this = $(this);
 	        bodyScrollLock.enableBodyScroll($this);
 	        lastScrollTop = $(window).scrollTop();
-	        console.log(lastScrollTop)
 	        $body.css({'top': -lastScrollTop});
 	        $body.css({"overflow-y":"hidden"});
 	        
@@ -28,9 +27,6 @@ $(function(){
 	        //$(window).scrollTop(lastScrollTop);
 
 	    })
-
-
-
 
 	    $NavGoNext.bind('click',function(){
 	    	navWrap.addClass('moved');
@@ -49,8 +45,6 @@ $(function(){
 		var element = $('.filter-search');
 		var inputGroup = $('.input-group');
 		var inputSearch = $('.filter-search-input')
-
-		console.log(element.length);
 
 		if( element.length > 0){
 
@@ -82,7 +76,7 @@ $(function(){
 				var maxH = $('body').height();
 				var v = maxH - y;
 
-				console.log("y=",y,maxH)
+				//console.log("y=",y,maxH)
 
 				if( v <= threshhold ){
 

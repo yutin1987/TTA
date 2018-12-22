@@ -2,20 +2,19 @@
 <html class="no-js" lang="zh-Hant">
 <head>    
     <meta charset="utf-8" />
-    <meta name="robots" content="index,follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="content-language" content="zh-TW" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content="Taiwan Tech Arena" />   
-    <meta name="description" content="This site is about Web UI/UX Design." />   
-	<meta property="og:title" content="Taiwan Tech Arena" />
+    <meta name="title" content="Taiwan Tech Arena - The Asia&#039;s Tech Startup Hub" />   
+    <meta name="description" content="Taiwan Tech Arena champions entrepreneurship and innovation with the goal of building a vibrant international tech startups ecosystem in Taiwan." />  
+    <meta name="keywords"  content="Taiwan Tech Arena, tech startups, startup hub in asia" /> 
+
+	<meta property="og:title" content="Taiwan Tech Arena - The Asia&#039;s Tech Startup Hub" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="http://royalblue-design.com" />
-	<meta property="og:description" content="This site is about Web UI/UX Design." />
-	<meta property="og:image" content="http://royalblue-design.com/img/royalbluedesign.jpg" />   
-	<meta name="twitter:image" content="http://royalblue-design.com/img/royalbluedesign.jpg"> 
-    <title>Taiwan Tech Arena</title>
-    <link rel="icon shortcut" href="favicon.ico" type="image/x-icon"/>
+	<meta property="og:url" content="http://taiwanarena.tech/" />
+	<meta property="og:description" content="Taiwan Tech Arena champions entrepreneurship and innovation with the goal of building a vibrant international tech startups ecosystem in Taiwan." />
+    <title>Taiwan Tech Arena - The Asia&#039;s Tech Startup Hubs</title>
+    <link rel="icon shortcut" href="favicon.png" type="image/x-icon"/>
 <link rel="stylesheet" href="/css/vendor.css">
 <link rel="stylesheet" href="/css/application.css">
 
@@ -23,7 +22,8 @@
 </head>
 
 
-                <div class="dots-css-bg"></div>
+                <link href="/libs/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css" />
+<div class="dots-css-bg"></div>
 <link href="/libs/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css" />
 
 <nav class="navbar navbar-light fixed-top tta-navbar">
@@ -113,7 +113,7 @@
 				<a href="javascript:;" data-calendar-nav="today">Today</a>
 				<a href="javascript:;" data-calendar-nav="prev"><i class="fal fa-angle-left"></i></a>
 				<a href="javascript:;" data-calendar-nav="next"><i class="fal fa-angle-right"></i></a>
-				<a class="tta-filter-dropdown dropdown-toggle nowyear" id="datepicker">All Dates</a>
+				<a class="tta-filter-dropdown dropdown-toggle nowyear" ><span class="getmonth">All Dates</span><input class="ghost-input" name="" id="datepicker"></a>
 			    <div class="dropdown-menu">
 					<a class="active" data-calendar-view="month">Month</a>
 					<a data-calendar-view="week">Week</a>
@@ -127,7 +127,8 @@
 			    <div class="dropdown-menu">
 					<a href="javascript:;" class="active" data-calendar-view="month">Month</a>
 					<a href="javascript:;" data-calendar-view="week">Week</a>
-					<a href="javascript:;" data-calendar-view="day">Agenda</a>
+					<a href="javascript:;" data-calendar-view="day">Day</a>
+					<a href="javascript:;" data-calendar-view="agenda">Agenda</a>
 			    </div>
 			  </div>
 			</div>
@@ -183,11 +184,8 @@
 <script type="text/javascript" src="/libs/jquery.min.js"></script>
 <script type="text/javascript" src="/libs/ie10-viewport-bug-workaround.js"></script>
 <script type="text/javascript" src="/libs/popper.min.js"></script>
-<script type="text/javascript" src="/libs/slick.js"></script>
 <script type="text/javascript" src="/libs/bodyScrollLock.js"></script>
 <script type="text/javascript" src="/libs/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/plugins/ScrollToPlugin.min.js"></script>
 <script type="text/javascript" src="/js/application.js"></script>
 
 
@@ -195,106 +193,7 @@
 <script type="text/javascript" src="libs/moment.js"></script>
 <script type="text/javascript" src="libs/calendar.js"></script>
 <script type="text/javascript" src="libs/bootstrap-datetimepicker.min.js"></script>
-<script type="text/javascript">
-   $(function () {
-        $('#datepicker').datepicker({
-            uiLibrary: 'bootstrap4',
-            iconsLibrary: 'fontawesome',
-	        icons: {
-	             rightIcon: '<span class="fal fa-angle-down"></span>'
-	        }
-        });
-    });
-</script>
-<script type="text/javascript">
-	(function($) {
+<script type="text/javascript" src="js/calendar-app.js"></script>
 
-		"use strict";
-
-		var options = {
-			events_source: 'events.json.php',
-			view: 'month',
-			tmpl_path: 'tmpls/',
-			tmpl_cache: false,
-			day: '2018-12-20',
-			onAfterEventsLoad: function(events) {
-				if(!events) {
-					return;
-				}
-				var list = $('#eventlist');
-				list.html('');
-
-				$.each(events, function(key, val) {
-					$(document.createElement('li'))
-						.html('<a href="' + val.url + '">' + val.title + '</a>')
-						.appendTo(list);
-				});
-			},
-			onAfterViewLoad: function(view) {
-				$('.filter-selector .nowyear').text(this.getTitle());
-				$('.filter-selector .input-group a').removeClass('active');
-				$('a[data-calendar-view="' + view + '"]').addClass('active');
-			},
-			classes: {
-				months: {
-					general: 'label'
-				}
-			}
-		};
-
-		var calendar = $('#calendar').calendar(options);
-
-		$('.filter-selector a[data-calendar-nav]').each(function() {
-			var $this = $(this);
-			$this.click(function() {
-				calendar.navigate($this.data('calendar-nav'));
-			});
-		});
-
-		$('.filter-selector a[data-calendar-view]').each(function() {
-			var $this = $(this);
-			$this.click(function() {
-				calendar.view($this.data('calendar-view'));
-				$this.parent().prev().text($this.text())
-			});
-		});
-
-		$('#first_day').change(function(){
-			var value = $(this).val();
-			value = value.length ? parseInt(value) : null;
-			calendar.setOptions({first_day: value});
-			calendar.view();
-		});
-
-		$('#language').change(function(){
-			calendar.setLanguage($(this).val());
-			calendar.view();
-		});
-
-		$('#events-in-modal').change(function(){
-			var val = $(this).is(':checked') ? $(this).val() : null;
-			calendar.setOptions({modal: val});
-		});
-		$('#format-12-hours').change(function(){
-			var val = $(this).is(':checked') ? true : false;
-			calendar.setOptions({format12: val});
-			calendar.view();
-		});
-		$('#show_wbn').change(function(){
-			var val = $(this).is(':checked') ? true : false;
-			calendar.setOptions({display_week_numbers: val});
-			calendar.view();
-		});
-		$('#show_wb').change(function(){
-			var val = $(this).is(':checked') ? true : false;
-			calendar.setOptions({weekbox: val});
-			calendar.view();
-		});
-		$('#events-modal .modal-header, #events-modal .modal-footer').click(function(e){
-			//e.preventDefault();
-			//e.stopPropagation();
-		});
-	}(jQuery));	
-</script>
 </body>
 </html>

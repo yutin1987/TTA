@@ -1,38 +1,31 @@
 $(function(){
 
-	var ttaIntro = $('.tta-intro');
-	var ttaFigure = $(".figures-container");
-	var element = $("svg.svg-container g.g");
-	var circle = ttaFigure.find('.circle');
-	var col = ttaFigure.find('.col');
-	var elemW,winW,winH,ttaiH;
-	var cirMaxH = 210;
+	"use strict";
+
+	//index view
+	var ttaIntro, ttaFigure, svgElement;
+	var elemW, winW, winH, ttaiH, ttafW;
 
 
-	var SVG = function(){
+	var SetUpItems = function(){
 
-		elemW = element[0].getBBox().width;
+		ttaIntro = $('.tta-intro');
+		ttaFigure = $(".figures-container");
+		svgElement = $("svg.svg-container g.g");
+
+	}
+
+
+	var svgmask = function(){
+
+		elemW = svgElement[0].getBBox().width;
 		winW = $(window).width();
 		winH = $(window).height();
 
 		ttaiH = ttaIntro.outerHeight();
 		ttafW = ttaFigure.width();
 
-		var col_w = col.width();
-		var rx = col_w;
-
-		console.log("col_w=",col_w,"rx=",rx)
-
-		if( rx >= cirMaxH){
-			rx = cirMaxH;
-			console.log("r1=",rx)
-		}else{
-			console.log("r2=",rx)
-			rx = rx;
-		}
-
 		var v;
-		var b = rx/3;
 
 		if( winW < 576){
 
@@ -40,7 +33,7 @@ $(function(){
 			console.log("elemW=",elemW,"winW=",winW)
 			v = (winW-elemW)/2;
 			
-			element.css({
+			svgElement.css({
 			  '-webkit-transform' : 'translateX(' + v + 'px) translateY(30%) scale(0.4)',
 			  '-moz-transform'    : 'translateX(' + v + 'px) translateY(30%) scale(0.4)',
 			  '-ms-transform'     : 'translateX(' + v + 'px) translateY(30%) scale(0.4)',
@@ -56,7 +49,7 @@ $(function(){
 
 			v = (winW-elemW)/2;
 
-			element.css({
+			svgElement.css({
 			  '-webkit-transform' : 'translateX(' + v + 'px) translateY(25%)',
 			  '-moz-transform'    : 'translateX(' + v + 'px) translateY(25%)',
 			  '-ms-transform'     : 'translateX(' + v + 'px) translateY(25%)',
@@ -70,11 +63,38 @@ $(function(){
 
 		}
 
+	}
+
+
+	var subscribe = function(){
+
+	  window.addEventListener('load', function() {
+	    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+	    var forms = document.getElementsByClassName('needs-validation');
+	    // Loop over them and prevent submission
+	    var validation = Array.prototype.filter.call(forms, function(form) {
+	      form.addEventListener('submit', function(event) {
+	        if (form.checkValidity() === false) {
+	          event.preventDefault();
+	          event.stopPropagation();
+	        }
+	        form.classList.add('was-validated');
+	      }, false);
+	    });
+	  }, false);
 
 	}
 
-	SVG()
-	$(window).resize(SVG);
-	
+	var init = function(){
 
-})
+		SetUpItems()
+		svgmask();
+		subscribe();
+
+		$(window).resize(svgmask);
+
+	}
+
+	init();
+
+});
