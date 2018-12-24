@@ -1,58 +1,82 @@
 $(function(){
 
-	var url      = window.location.href;  
-	var u 		 = url.split('?p=');
-	var id 		 = Number(u[1]);
+
+	"use strict";
+
+	var element = $('.tta-recommand-articles');
+	var type = element.attr('data-load-type')
 
 	var prevID,nextID;
 	var	METHOD,data_path;
 
-	var scope = $('#data-load-target');
-	var $article_title = $('.article-title',scope);
-	var $article_content = $('.article-content',scope);
-	var $prev = $('.prev-page',scope);
-	var $next = $('.next-page',scope);
+	var ariclewrap, recommandwrap;
+	var aricletype, recommandtype;
 
-	var renderData = function(){
+	var scope,title,content,id;
+	var prev,next;
+
+	var SetUpItems = function(){
 
 		METHOD = "GET";
-		data_path = "/json/data.json";
+		data_path = "/json/"+ type +"/data.json";
 
-		$.ajax({
-		  method: METHOD,
-		  url: data_path,
-		  dataType: 'json',
-		  data: {}
-		})
-		.done(function(data) {
-			console.log( "json get success " + data_path );
-			build(data);
-		})
-		.fail(function() {
-			console.log( "json fail " +  data_path );
-		})
+		scope = $('.tta-article');
+		ariclewrap = $('.tta-articles-load-wrap');
+		recommandwrap = $('.tta-recommand-articles')
+		title = $('.article-title');
+		content = $('.article-content')
+
+		prev = $('.prev-page');
+		next = $('.next-page');
 
 	}
 
-	var build = function(data,obj){
+	var LoadDataController = function(){
 
-		var currentID = id;
 
-    	$article_title.html( data.title.rendered );
-    	$article_content.html( data.content.rendered );
 
-    	prevID = currentID - 1;
-    	nextID = currentID + 1 ;
+		var GetData = function(){
 
-    	$prev.attr("href",'/events/?p='+ prevID +'');
-    	$next.attr("href",'/events/?p='+ nextID +'');
+			$.ajax({
+			  method: METHOD,
+			  url: data_path,
+			  dataType: 'json',
+			  data: {}
+			})
+			.done(function(data) {
+				console.log( "json get success " + data_path );
+				console.log(data)
+				//build(data);
+			})
+			.fail(function() {
+				console.log( "json fail " +  data_path );
+			})
+
+
+		}();
+
+
+		var build = function(data){
+
+			var currentID = id;
+
+	    	$article_title.html( data.title.rendered );
+	    	$article_content.html( data.content.rendered );
+
+	    	prevID = currentID - 1;
+	    	nextID = currentID + 1 ;
+
+	    	$prev.attr("href",'/events/?p='+ prevID +'');
+	    	$next.attr("href",'/events/?p='+ nextID +'');
+
+		}
 
 	}
-	
 
 	var init = function(){
 
-		renderData()
+		SetUpItems()
+		LoadDataController()
 
 	}
 

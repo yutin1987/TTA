@@ -65,12 +65,7 @@ $(function () {
 			}
 		};
 
-	    _calendar.calendar(options);
-
-	}
-
-
-	var addEventListener = function(){
+	    var calendar = _calendar.calendar(options);
 
 	    _datepicker.bind('change',function(){
 
@@ -136,7 +131,6 @@ $(function () {
 	var init = function(){
 
 		SetUpItems()
-		addEventListener()
 		AppController()
 
 	}

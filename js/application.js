@@ -23,8 +23,8 @@ $(function(){
 	        bodyScrollLock.clearAllBodyScrollLocks()
 	        $body.css({"overflow-y":"visible","overflow-x":"hidden"});
 	        navWrap.removeClass('moved');
-	        //$body.css({'top': 'auto'});
-	        //$(window).scrollTop(lastScrollTop);
+	        $body.css({'top': 'auto'});
+	        $(window).scrollTop(lastScrollTop);
 
 	    })
 

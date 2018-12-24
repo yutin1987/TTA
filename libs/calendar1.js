@@ -84,7 +84,7 @@ if(!String.prototype.formatNum) {
 		// /component/bootstrap-calendar/tmpls/
 		// or absolute
 		// http://localhost/component/bootstrap-calendar/tmpls/
-		tmpl_path: 'tmpls/',
+		tmpl_path: '/mpls/',
 		tmpl_cache: true,
 		classes: {
 			months: {
@@ -122,6 +122,9 @@ if(!String.prototype.formatNum) {
 				enable: 1
 			},
 			day: {
+				enable: 1
+			},
+			agenda:{
 				enable: 1
 			}
 		},
@@ -161,7 +164,8 @@ if(!String.prototype.formatNum) {
 			year: '',
 			month: '',
 			week: '',
-			day: ''
+			day: '',
+			agenda: ''
 		},
 		stop_cycling: false
 	};
@@ -453,6 +457,9 @@ if(!String.prototype.formatNum) {
 			case 'day':
 				this._calculate_hour_minutes(data);
 				break;
+			case 'agenda':
+				this._calculate_hour_minutes(data);
+				break;
 		}
 
 		data.start = new Date(this.options.position.start.getTime());
@@ -721,6 +728,60 @@ if(!String.prototype.formatNum) {
 		return this.options.templates['month-day'](t);
 	}
 
+	Calendar.prototype._agenda = function(week, day) {
+		this._loadTemplate('agenda');
+
+		var t = {tooltip: '', cal: this};
+		var cls = this.options.classes.months.outmonth;
+
+		var firstday = this.options.position.start.getDay();
+		if(getExtentedOption(this, 'first_day') == 2) {
+			firstday++;
+		} else {
+			firstday = (firstday == 0 ? 7 : firstday);
+		}
+
+		day = (day - firstday) + 1;
+		var curdate = new Date(this.options.position.start.getFullYear(), this.options.position.start.getMonth(), day, 0, 0, 0);
+
+		// if day of the current month
+		if(day > 0) {
+			cls = this.options.classes.months.inmonth;
+		}
+		// stop cycling table rows;
+		var daysinmonth = (new Date(this.options.position.end.getTime() - 1)).getDate();
+		if((day + 1) > daysinmonth) {
+			this.stop_cycling = true;
+		}
+		// if day of the next month
+		if(day > daysinmonth) {
+			day = day - daysinmonth;
+			cls = this.options.classes.months.outmonth;
+		}
+
+		cls = $.trim(cls + " " + this._getDayClass("months", curdate));
+
+		if(day <= 0) {
+			var daysinprevmonth = (new Date(this.options.position.start.getFullYear(), this.options.position.start.getMonth(), 0)).getDate();
+			day = daysinprevmonth - Math.abs(day);
+			cls += ' cal-month-first-row';
+		}
+
+		var holiday = this._getHoliday(curdate);
+		if(holiday !== false) {
+			t.tooltip = holiday;
+		}
+
+		t.data_day = curdate.getFullYear() + '-' + curdate.getMonthFormatted() + '-' + (day < 10 ? '0' + day : day);
+		t.cls = cls;
+		t.day = day;
+
+		t.start = parseInt(curdate.getTime());
+		t.end = parseInt(t.start + 86400000);
+		t.events = this.getEventsBetween(t.start, t.end);
+		return this.options.templates['month-day'](t);
+	}
+
 	Calendar.prototype._getHoliday = function(date) {
 		var result = false;
 		$.each(getHolidays(this, date.getFullYear()), function() {
@@ -806,6 +867,9 @@ if(!String.prototype.formatNum) {
 				case 'day':
 					to.start.setDate(this.options.position.start.getDate() + 1);
 					break;
+				case 'agenda':
+					to.start.setDate(this.options.position.start.getDate() + 1);
+					break;
 			}
 		} else if(where == 'prev') {
 			switch(this.options.view) {
@@ -819,6 +883,9 @@ if(!String.prototype.formatNum) {
 					to.start.setDate(this.options.position.start.getDate() - 7);
 					break;
 				case 'day':
+					to.start.setDate(this.options.position.start.getDate() - 1);
+					break;
+				case 'agenda':
 					to.start.setDate(this.options.position.start.getDate() - 1);
 					break;
 			}
@@ -863,6 +930,10 @@ if(!String.prototype.formatNum) {
 				this.options.position.end.setTime(new Date(year, month + 1, 1).getTime());
 				break;
 			case 'day':
+				this.options.position.start.setTime(new Date(year, month, day).getTime());
+				this.options.position.end.setTime(new Date(year, month, day + 1).getTime());
+				break;
+			case 'agenda':
 				this.options.position.start.setTime(new Date(year, month, day).getTime());
 				this.options.position.end.setTime(new Date(year, month, day + 1).getTime());
 				break;
@@ -914,6 +985,11 @@ if(!String.prototype.formatNum) {
 	};
 
 	Calendar.prototype.getDay = function() {
+		var p = this.options.position.start;
+		return this.locale['d' + p.getDay()];
+	};
+
+	Calendar.prototype.getAgenda = function() {
 		var p = this.options.position.start;
 		return this.locale['d' + p.getDay()];
 	};
@@ -1134,6 +1210,10 @@ if(!String.prototype.formatNum) {
 	};
 
 	Calendar.prototype._update_day = function() {
+		$('#cal-day-panel').height($('#cal-day-panel-hour').height());
+	};
+
+	Calendar.prototype._update_agenda = function() {
 		$('#cal-day-panel').height($('#cal-day-panel-hour').height());
 	};
 

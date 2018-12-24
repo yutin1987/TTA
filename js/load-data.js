@@ -39,6 +39,8 @@ $(function(){
 
 			}
 
+			console.log(data_path)
+
 			$.ajax({
 			  method: METHOD,
 			  url: data_path,
@@ -101,7 +103,7 @@ $(function(){
 						console.log("Now in the events wrap.")
 
 						_wrap = _events_wrap;
-						_wrap.append('<div class="col-12 col-sm-6 col-md-3"><a class="tta-card" href="/events/"><div class="thumbnail" style="background-image:url('+a.thumbURL+')"></div><div class="tag-container"><span class="tag">'+a.tag+'</span><span class="date">'+a.date+'</span></div><div class="tta-card-title">'+a.title+'</div><div class="tta-card-link"><i class="link-classic cyan__black"></i></div></a></div>');
+						_wrap.append('<div class="col-12 col-sm-6 col-md-3"><a class="tta-card" href="/events/'+a.url+'" target="_blank"><div class="thumbnail" style="background-image:url('+a.thumbURL+')"></div><div class="tag-container"><span class="tag">'+a.tag+'</span><span class="date">'+a.date+'</span></div><div class="tta-card-title">'+a.title+'</div><div class="tta-card-link"><i class="link-classic cyan__black"></i></div></a></div>');
 
 						break;
 
@@ -109,7 +111,7 @@ $(function(){
 						console.log("Now in the news wrap.")
 
 						_wrap = _news_wrap;
-						_wrap.append('<div href="news/" class="col-12 col-sm-6 col-md-4"><a class="tta-card"><div class="thumbnail" style="background-image:url('+a.thumbURL+')"></div><div class="tag-container"><span class="tag">'+a.tag+'</span><span class="date">'+a.date+'</span></div><div class="tta-card-title">'+a.title+'</div><div class="tta-card-link"><i class="link-classic cyan__black"></i></div></a></div>');
+						_wrap.append('<div class="col-12 col-sm-6 col-md-3"><a class="tta-card" href="/news/'+a.url+'" target="_blank"><div class="thumbnail" style="background-image:url('+a.thumbURL+')"></div><div class="tag-container"><span class="tag">'+a.tag+'</span><span class="date">'+a.date+'</span></div><div class="tta-card-title">'+a.title+'</div><div class="tta-card-link"><i class="link-classic cyan__black"></i></div></a></div>');
 
 
 						break;

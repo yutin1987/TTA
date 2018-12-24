@@ -103,7 +103,7 @@
 </nav>
 
 <main>
-	<div class="tta-kv"><div class="mouse"><span></span></div></div>
+	<div class="tta-kv"><div class="mouse"><i></i><span class="mouse-text">SCROLL</span></div></div>
 	<div class="tta-intro">
 				<svg class="svg-container" width="100%">
 		  <defs>
@@ -221,18 +221,21 @@
 		<div class="container">
 			<div class="title-slogan">Never miss an announcement</div>
 			<form class="email-form needs-validation" novalidate>
-				<div class="input-group mb-3 input-subscribe">
-				  	<input type="text" class="form-control tta-input" placeholder="Email address*" aria-label="Email address*">
+				<div class="input-group input-subscribe">
+				  	<input type="text" class="form-control tta-input" placeholder="Email address*" aria-label="Email address*" required>
+				      <div class="invalid-feedback">
+				        Please enter your e-mail!
+				      </div>
 					<button class="btn btn-outline-secondary tta-btn-primary" id="EDM_submit" type="submit" >SIGN UP FOR OUR NEWSLETTER</button>
 				</div>
 				<div class="form-check">
-				  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-				  <label class="form-check-label" for="defaultCheck1">
-				    I wish to receive email notifications from Taiwan Tech Arena, including upcoming promotions,discounted tickets, news about our conferences, and access to exclusive
-				  </label>
-			      <div class="valid-feedback">
-			        Looks good!
-			      </div>
+					<label class="checkbox-container">
+						<label for="invalidCheck">I wish to receive email notifications from Taiwan Tech Arena, including upcoming promotions,discounted tickets, news about our conferences, and access to exclusive.</label>
+					  	<input type="checkbox" class="form-check-input" id="invalidCheck" value=""required>
+					  	<div class="invalid-feedback">Please check the message above.</div>
+					  	<span class="checkmark"></span>
+					</label>
+
 				</div>
 			</form>
 		</div>
