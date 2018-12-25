@@ -3,350 +3,130 @@
 	"source":[
 		{
 			"GroupTheme":"group-a",
-			"GroupName":"ACCELERATORS",
+			"GroupName":"Advanced Manufacturing",
 			"GroupData":[
 				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/07/比翼-logo-Chen-Arthur.jpg",
-					"name":"比翼資本 BE CAPITAL",
-					"tag":"ACCELERATORS",
-					"des":"描述",
-					"URL":"http://www.becapital.com.tw/",
+					"thumbURL":"/img/teams/awowo.png",
+					"name":"AWOWO TECH. CO., LTD.",
+					"tag":"Advanced Manufacturing",
+					"des":"Awowo is a professional company in research and development about electric drums", 
+					"URL":"http://www.awowo.com/",
+					"linkedinURL":"",
+					"twitterURL":"",
+					"fbURL":"https://www.facebook.com/pages/category/Company/AWOWO-TECH-183622291777938/"
+				},
+				{
+					"thumbURL":"/img/teams/han-win.png",
+					"name":"Han-Win Technology Co., Ltd.",
+					"tag":"Advanced Manufacturing",
+					"des":"HWT is one-stop and in-house manufacturing process for BMS and packs. At the heart of Han-Win Technology is an excellent in-depth knowledge and understanding of battery management system of Li-Ion batteries and a constant drive for innovation.",
+					"URL":"http://www.hwtco.com/home",
 					"linkedinURL":"",
 					"twitterURL":"",
 					"fbURL":""
 				},
 				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/05/5950d76b117fb-1.png",
-					"name":"IAPS",
-					"tag":"ACCELERATORS",
-					"des":"描述",
-					"URL":"http://iaps.nctu.edu.tw/",
+					"thumbURL":"/img/teams/TIMC.jpg",
+					"name":"Taiwan Intelltech Manufacturing Co., Ltd.",
+					"tag":"Advanced Manufacturing",
+					"des":"TiMC is an autonomous design and innovative technology company focused on the independent development, manufacture and sale of smart devices through advanced control technologies.",
+					"URL":"http://www.timc.com.tw/info.html",
 					"linkedinURL":"",
 					"twitterURL":"",
 					"fbURL":""
 				},
 				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/09/SparkLabs_Taipei_Logo_BK_PNG.png",
-					"name":"SparkLabs",
-					"tag":"ACCELERATORS",
-					"des":"描述",
-					"URL":"http://www.sparklabsglobal.com/",
+					"thumbURL":"/img/teams/T3D.png",
+					"name":"Taiwan 3D Tech",
+					"tag":"Advanced Manufacturing",
+					"des":"T3D is a startup, a spinoff of NTUST (TAIWAN TECH). Smartphone is no longer just for information display. T3D employs the image light as “Energy” to fabricate a 3D part. It is the first smartphone 3D printer worldwide with cloud computing service.",
+					"URL":"http://myt3d.com/index_en.php",
 					"linkedinURL":"",
 					"twitterURL":"",
-					"fbURL":""
-				},
-				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/05/l6.jpg",
-					"name":"Mobile Only X",
-					"tag":"ACCELERATORS",
-					"des":"描述",
-					"URL":"https://mobileonlyx.com/",
-					"linkedinURL":"",
-					"twitterURL":"",
-					"fbURL":""
-				},
-				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/05/l4.jpg",
-					"name":"Tech Stars",
-					"tag":"ACCELERATORS",
-					"des":"描述",
-					"URL":"https://www.techstars.com/",
-					"linkedinURL":"",
-					"twitterURL":"",
-					"fbURL":""
-				},
-				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/05/10X.png",
-					"name":"SparkLabs Taipei",
-					"tag":"ACCELERATORS",
-					"des":"描述",
-					"URL":"",
-					"linkedinURL":"",
-					"twitterURL":"",
-					"fbURL":""
-				},
-				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/05/10X.png",
-					"name":"10X Innovation lab",
-					"tag":"ACCELERATORS",
-					"des":"描述",
-					"URL":"",
-					"linkedinURL":"",
-					"twitterURL":"",
-					"fbURL":""
-				},
-				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/08/TaiwanTechArena.png",
-					"name":"Garage Plus",
-					"tag":"ACCELERATORS",
-					"des":"描述",
-					"URL":"http://www.garageplus.asia/en",
-					"linkedinURL":"",
-					"twitterURL":"",
-					"fbURL":""
-				},
-				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/06/Skydeck-e1534756447534.png",
-					"name":"SKYDECK",
-					"tag":"ACCELERATORS",
-					"des":"描述",
-					"URL":"http://skydeck.berkeley.edu/",
-					"linkedinURL":"",
-					"twitterURL":"",
-					"fbURL":""
-				},
-				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/06/Startupbootcamp.png",
-					"name":"Startup Bootcamp",
-					"tag":"ACCELERATORS",
-					"des":"描述",
-					"URL":"https://www.startupbootcamp.org/",
-					"linkedinURL":"",
-					"twitterURL":"",
-					"fbURL":""
-				},
-				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/05/Satrfab.png",
-					"name":"Star Fab",
-					"tag":"ACCELERATORS",
-					"des":"描述",
-					"URL":"https://www.starfabx.com/",
-					"linkedinURL":"",
-					"twitterURL":"",
-					"fbURL":""
-				},
-				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/05/TVC.png",
-					"name":"TVC",
-					"tag":"ACCELERATORS",
-					"des":"描述",
-					"URL":"",
-					"linkedinURL":"",
-					"twitterURL":"",
-					"fbURL":""
+					"fbURL":"https://www.facebook.com/myt3d/"
 				}
 			]
 		},
 		{
 			"GroupTheme":"group-b",
-			"GroupName":"CORPORATES",
+			"GroupName":"Artificial Intelligence",
 			"GroupData":[
 				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/05/104.png",
-					"name":"104人力銀行",
-					"tag":"CORPORATES",
-					"des":"描述",
-					"URL":"http://corp.104.com.tw/",
+					"thumbURL":"/img/teams/agritalk.jpg",
+					"name":"AgriTalk Technology Inc.",
+					"tag":"Artificial Intelligence",
+					"des":"AgriTalk is a revolutionary and comprehensive farming system that integrates artificial intelligence to deliver total regulation.",
+					"URL":"http://agritalktech.com/",
+					"linkedinURL":"",
+					"twitterURL":"",
+					"fbURL":"https://www.facebook.com/AgriTalk/"
+				},
+				{
+					"thumbURL":"/img/teams/ahead.png",
+					"name":"AHEAD",
+					"tag":"Artificial Intelligence",
+					"des":"AHEAD focus on developing diagnostic and clinical decision support tools for blood cancer using artificial intelligence.",
+					"URL":"http://biic.ee.nthu.edu.tw/ahead/",
+					"linkedinURL":"",
+					"twitterURL":"",
+					"fbURL":"http://biic.ee.nthu.edu.tw/ahead/"
+				},
+				{
+					"thumbURL":"/img/teams/carkit.png",
+					"name":"CarKit AI Inc.",
+					"tag":"Artificial Intelligence",
+					"des":"CarKit AI is a AI-based company focusing on develop AIoT devices to Keeps you driving more Safe, Smart, Convenient & Fun.",
+					"URL":"https://www.carkit-ai.com/",
 					"linkedinURL":"",
 					"twitterURL":"",
 					"fbURL":""
 				},
 				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/05/Acer-1.png",
-					"name":"acer 宏碁",
-					"tag":"CORPORATES",
-					"des":"描述",
-					"URL":"https://www.acer.com/worldwide/selection.html",
+					"thumbURL":"/img/teams/creda.png",
+					"name":"creDa Inc.",
+					"tag":"Artificial Intelligence",
+					"des":"creDa helps you to speed up on labeling your video data for deep learning with the factor of ten.",
+					"URL":"https://www.aicreda.com/",
 					"linkedinURL":"",
 					"twitterURL":"",
 					"fbURL":""
 				},
 				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/09/SparkLabs_Taipei_Logo_BK_PNG.png",
-					"name":"SparkLabs",
-					"tag":"CORPORATES",
-					"des":"描述",
-					"URL":"http://www.sparklabsglobal.com/",
+					"thumbURL":"/img/teams/faceheart.png",
+					"name":"FaceHeart Inc.",
+					"tag":"Artificial Intelligence",
+					"des":"FaceHeart Inc. is an AI software company, which has developed an AI based driver monitoring solution called eBus for solving the problem of drowsy driving and alerts drivers if they are fatigue driving or not.",
+					"URL":"www.faceheart.com",
 					"linkedinURL":"",
 					"twitterURL":"",
 					"fbURL":""
 				},
 				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/08/Rings_bl-RGB.png",
-					"name":"Audi",
-					"tag":"CORPORATES",
-					"des":"描述",
-					"URL":"https://www.audi.com/en/innovation.html",
-					"linkedinURL":"",
-					"twitterURL":"",
+					"thumbURL":"/img/teams/language_hero.png",
+					"name":"Language Hero",
+					"tag":"Artificial Intelligence",
+					"des":"Language Hero Smart Chat uses AI to get beginning language students who don't know a word of each other's language comfortably speaking face-to-face. We're the first peer-to-peer language video chat app with content and guidence.",
+					"URL":"http://mylanguagehero.com/",
+					"linkedinURL":"https://www.linkedin.com/company/language-hero/",
+					"twitterURL":"https://twitter.com/language_hero",
 					"fbURL":""
 				},
 				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/05/l1.jpg",
-					"name":"AMAZON",
-					"tag":"CORPORATES",
-					"des":"描述",
-					"URL":"https://aws.amazon.com/",
+					"thumbURL":"/img/teams/mavin.png",
+					"name":"Mavin Technology Inc.",
+					"tag":"Artificial Intelligence",
+					"des":"Mavin team specialized core technology of wireless & digital Audio, the Winners of CES Innovation, Red-Dot , iF Design and VGP Award.",
+					"URL":"https://www.mavinlife.com/",
 					"linkedinURL":"",
-					"twitterURL":"",
-					"fbURL":""
+					"twitterURL":"https://twitter.com/Mavinlife",
+					"fbURL":"https://www.facebook.com/Mavin-698514540502073/"
 				},
 				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/05/CHT.png",
-					"name":"中華電信",
-					"tag":"CORPORATES",
-					"des":"描述",
-					"URL":"https://www.cht.com.tw/en/",
-					"linkedinURL":"",
-					"twitterURL":"",
-					"fbURL":""
-				},
-				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/05/Compal-1.png",
-					"name":"Compal",
-					"tag":"CORPORATES",
-					"des":"描述",
-					"URL":"http://www.compal.com/",
-					"linkedinURL":"",
-					"twitterURL":"",
-					"fbURL":""
-				},
-				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/05/CTBC-2.png",
-					"name":"CTBC中國信託",
-					"tag":"CORPORATES",
-					"des":"描述",
-					"URL":"https://en.wikipedia.org/wiki/CTBC_Bank",
-					"linkedinURL":"",
-					"twitterURL":"",
-					"fbURL":""
-				},
-				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/05/DBS-1.png",
-					"name":"星展銀行",
-					"tag":"CORPORATES",
-					"des":"描述",
-					"URL":"https://www.dbs.com.tw/index/default.page",
-					"linkedinURL":"",
-					"twitterURL":"",
-					"fbURL":""
-				},
-				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/06/Google-1-e1534756409830.png",
-					"name":"Google",
-					"tag":"CORPORATES",
-					"des":"描述",
-					"URL":"https://www.google.com/",
-					"linkedinURL":"",
-					"twitterURL":"",
-					"fbURL":""
-				},
-				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/05/LiteOn.png",
-					"name":"Lite On",
-					"tag":"CORPORATES",
-					"des":"描述",
-					"URL":"https://www.liteon.com/en-us",
-					"linkedinURL":"",
-					"twitterURL":"",
-					"fbURL":""
-				},
-				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/06/Lumo-Labs-e1534756394725.png",
-					"name":"Lumo Labs",
-					"tag":"CORPORATES",
-					"des":"描述",
-					"URL":"http://www.lumolabs.io/",
-					"linkedinURL":"",
-					"twitterURL":"",
-					"fbURL":""
-				},
-				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/05/8867.Microsoft_5F00_Logo_2D00_for_2D00_screen-1.jpg",
-					"name":"Microsoft",
-					"tag":"CORPORATES",
-					"des":"描述",
-					"URL":"https://www.microsoft.com/en-us/about",
-					"linkedinURL":"",
-					"twitterURL":"",
-					"fbURL":""
-				},
-				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/05/l5.jpg",
-					"name":"Nvidia",
-					"tag":"CORPORATES",
-					"des":"描述",
-					"URL":"http://www.nvidia.com/content/global/global.php",
-					"linkedinURL":"",
-					"twitterURL":"",
-					"fbURL":""
-				},
-				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/05/Oxford.png",
-					"name":"Ocford Instruments",
-					"tag":"CORPORATES",
-					"des":"描述",
-					"URL":"https://www.oxinst.com/",
-					"linkedinURL":"",
-					"twitterURL":"",
-					"fbURL":""
-				},
-				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/05/Trend-Micro-1.png",
-					"name":"趨勢科技",
-					"tag":"CORPORATES",
-					"des":"描述",
-					"URL":"https://www.trendmicro.com/en_us/business.html",
-					"linkedinURL":"",
-					"twitterURL":"",
-					"fbURL":""
-				},
-				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/05/Winstron.png",
-					"name":"Wistron",
-					"tag":"CORPORATES",
-					"des":"描述",
-					"URL":"https://www.wistron.com/CMS/ChangeLanguage/3",
-					"linkedinURL":"",
-					"twitterURL":"",
-					"fbURL":""
-				},
-				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/06/WPG-e1534756381105.jpg",
-					"name":"WPG Holdings",
-					"tag":"CORPORATES",
-					"des":"描述",
-					"URL":"http://www.wpgholdings.com/main/index/en",
-					"linkedinURL":"",
-					"twitterURL":"",
-					"fbURL":""
-				},
-				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/05/FutureWard.png",
-					"name":"Futureward",
-					"tag":"CORPORATES",
-					"des":"描述",
-					"URL":"http://futureward.com/",
-					"linkedinURL":"",
-					"twitterURL":"",
-					"fbURL":""
-				},
-				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/05/Hoffman.png",
-					"name":"The Hoffman Agency",
-					"tag":"CORPORATES",
-					"des":"描述",
-					"URL":"https://www.hoffman.com/",
-					"linkedinURL":"",
-					"twitterURL":"",
-					"fbURL":""
-				},
-				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/06/perobot.jpg",
-					"name":"博沛科技",
-					"tag":"CORPORATES",
-					"des":"描述",
-					"URL":"http://www.perobot.com.tw/",
-					"linkedinURL":"",
-					"twitterURL":"",
-					"fbURL":""
-				},
-				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/05/Umbo.png",
-					"name":"UMBO",
-					"tag":"CORPORATES",
-					"des":"描述",
-					"URL":"https://umbocv.ai/",
+					"thumbURL":"/img/teams/medjade.png",
+					"name":"MedJade",
+					"tag":"Artificial Intelligence",
+					"des":"MedJade is dedicated to the development of medical devices for precision medicine, and to find the most suitable treatment for personal health with AI technology.",
+					"URL":"",
 					"linkedinURL":"",
 					"twitterURL":"",
 					"fbURL":""
@@ -355,34 +135,94 @@
 		},
 		{
 			"GroupTheme":"group-c",
-			"GroupName":"GOVERNMENT",
+			"GroupName":"Cyber Security & Software",
 			"GroupData":[
 				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/05/FrenchBureau.png",
-					"name":"法國在台協會",
-					"tag":"GOVERNMENT",
-					"des":"描述",
-					"URL":"https://www.france-taipei.org/",
+					"thumbURL":"/img/teams/3drens.png",
+					"name":"3drens",
+					"tag":"Cyber Security & Software",
+					"des":"3drens aims to provide smart mobility solutions with our vehicle intelligence platform. By collecting data from vehicles and get useful information from them, we can help the mobility industries, such as logistics, vehicle rental companies, etc. manage assets and optimize operations.",
+					"URL":"http://www.3drens.com/r/",
+					"linkedinURL":"",
+					"twitterURL":"",
+					"fbURL":"https://www.facebook.com/3drens/"
+				},
+				{
+					"thumbURL":"/img/teams/anchor.png",
+					"name":"Anchor Tech Co., Ltd.",
+					"tag":"Cyber Security & Software",
+					"des":"Our new brand NIDO provides traditional vending machines a solution for adding mobile payment and management on cloud.",
+					"URL":"https://www.anchor-tech.com.tw/",
 					"linkedinURL":"",
 					"twitterURL":"",
 					"fbURL":""
 				},
 				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/05/FrenchTech.png",
-					"name":"FRENCH TECH",
-					"tag":"GOVERNMENT",
-					"des":"描述",
-					"URL":"https://taiwan.lafrenchtech.com/",
+					"thumbURL":"/img/teams/lubn.png",
+					"name":"Lubn Inc",
+					"tag":"Cyber Security & Software",
+					"des":"LubnBox is the first 4G/LTE smart key box with an embedded camera to enable remote property management via cloud.  Lubn Smart Contract helps the managers build the trust among managers, property owners and service providers.",
+					"URL":"https://lubn.com/",
+					"linkedinURL":"https://www.linkedin.com/company/lubn/",
+					"twitterURL":"",
+					"fbURL":""
+				},
+				{
+					"thumbURL":"/img/teams/chelpis.png",
+					"name":"Chelpis Co., Ltd.",
+					"tag":"Cyber Security & Software",
+					"des":"Chelpis is a Blockchain and Crypto software startup company in Taiwan focusing on cryptocurrency storage solution with Quantum-Proof next generation algorithm that offers the most secure storage solution this is currently available on the market.",
+					"URL":"https://www.chelpis.com/",
 					"linkedinURL":"",
 					"twitterURL":"",
 					"fbURL":""
 				},
 				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/05/Holland.png",
-					"name":"Holland",
-					"tag":"GOVERNMENT",
-					"des":"描述",
-					"URL":"http://www.ntio.org.tw/",
+					"thumbURL":"/img/teams/equalearning.png",
+					"name":"Equalearning",
+					"tag":"Cyber Security & Software",
+					"des":"Equalearning, an interactive mobile solution provider (IMSP), leveraged the ubiquity of tablets and smartphones and created an interactive mobile platform that is instantly deployable, requires little capital expense, and can improve learning outcomes immediately.​",
+					"URL":"https://www.equalearning.com/",
+					"linkedinURL":"https://www.linkedin.com/company/equalearning-inc./about/",
+					"twitterURL":"",
+					"fbURL":"https://www.facebook.com/equalearning/"
+				},
+				{
+					"thumbURL":"/img/teams/flipweb.png",
+					"name":"FlipWeb",
+					"tag":"Cyber Security & Software",
+					"des":"Flipweb is a secured marketplace for buying and selling digital assets, including websites, apps, domain and social accounts.",
+					"URL":"https://flipweb.tw/about",
+					"linkedinURL":"",
+					"twitterURL":"",
+					"fbURL":""
+				},
+				{
+					"thumbURL":"/img/teams/relajet.png",
+					"name":"RelaJet",
+					"tag":"Cyber Security & Software",
+					"des":"RelaJet is devoted to explore every possibility of hearing with cutting-edge technology.",
+					"URL":"https://www.relajet.com/",
+					"linkedinURL":"",
+					"twitterURL":"",
+					"fbURL":"https://www.facebook.com/relajet/"
+				},
+				{
+					"thumbURL":"/img/teams/ruize.png",
+					"name":"Ruize International",
+					"tag":"Cyber Security & Software",
+					"des":"IPbook transforms the way you explore technology, seek answers and present ideas.",
+					"URL":"https://www.ipbook.io/",
+					"linkedinURL":"",
+					"twitterURL":"",
+					"fbURL":""
+				},
+				{
+					"thumbURL":"/img/teams/TUFST.png",
+					"name":"Taiwan User-Friendly Sensors & Tech Co., Ltd. ",
+					"tag":"Cyber Security & Software",
+					"des":"A portable allergen detection system has developed including a keychain analyzer which could enable allergy sufferers to detect cross-contamination in their food before a costly trip to the emergency room.",
+					"URL":"https://www.dbs.com.tw/index/default.page",
 					"linkedinURL":"",
 					"twitterURL":"",
 					"fbURL":""
@@ -391,54 +231,180 @@
 		},
 		{
 			"GroupTheme":"group-d",
-			"GroupName":"VENTURE CAPITAL",
+			"GroupName":"Healthcare & Biomedical",
 			"GroupData":[
 				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/05/CCIA.png",
-					"name":"法國在台協會",
-					"tag":"VENTURE CAPITAL",
-					"des":"描述",
-					"URL":"http://www.cdibcapitalgroup.com/cdibenhtml/index",
+					"thumbURL":"/img/teams/accurate_meditech.png",
+					"name":"Accurate Meditech Inc",
+					"tag":"Healthcare & Biomedical",
+					"des":"Accurate 24 is the world's first sphygmomanometer that can be used in the night without disturbing the patient and can measure continuously for 24 hours, and can synchronize the vital signs with the remote doctor at any time.",
+					"URL":"https://accurate-meditech.com/",
 					"linkedinURL":"",
 					"twitterURL":"",
 					"fbURL":""
 				},
 				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/06/mesh-venture.png",
-					"name":"MESH",
-					"tag":"VENTURE CAPITAL",
-					"des":"描述",
-					"URL":"http://mesh.vc/",
+					"thumbURL":"/img/teams/genius.png",
+					"name":"Genius Holdings Co., Ltd. Taiwan Branch",
+					"tag":"Healthcare & Biomedical",
+					"des":"ezOxygen, connects your breath health, Air Quqlity Index with smartphone, bring the best care for exercise and respiratory management. ",
+					"URL":"http://www.ezoxygentech.com/",
+					"linkedinURL":"https://www.linkedin.com/company/genius-holdings-co-ltd-taiwan-branch/",
+					"twitterURL":"https://twitter.com/ezOxygen_Taiwan",
+					"fbURL":"https://www.facebook.com/ezoxygen/"
+				},
+				{
+					"thumbURL":"/img/teams/eleclean.png",
+					"name":"Eleclean Co., Ltd.",
+					"tag":"Healthcare & Biomedical",
+					"des":"ELECLEAN disinfectant spray is our first product launched onto the market and it using nano-catalysis electrochemical technology manufactures disinfectant within 15 minutes. ",
+					"URL":"http://www.eleclean.com.tw/",
+					"linkedinURL":"",
+					"twitterURL":"",
+					"fbURL":"https://www.facebook.com/ELECLEAN.COM.TW/"
+				},
+				{
+					"thumbURL":"/img/teams/TMOB.png",
+					"name":"Taiwan Main Orthopedic Biotechnology",
+					"tag":"Healthcare & Biomedical",
+					"des":"Taiwan Main Orthopaedic Biotechnology is determined to target of long-term medical-related software development and manufacture of medical devices.",
+					"URL":"http://www.surglasses.com/home.html",
+					"linkedinURL":"https://www.linkedin.com/company/taiwan-main-orthopedics-biotech-co-ltd/",
+					"twitterURL":"",
+					"fbURL":"https://www.facebook.com/surglasses/"
+				},
+				{
+					"thumbURL":"/img/teams/sinopulsar.png",
+					"name":"Sinopulsar Technology Inc",
+					"tag":"Healthcare & Biomedical",
+					"des":"Sinopulsar Technology Inc a professional company for IC design, and Internet of Things (IoT) applications. Sinopulsar developing the Internet key applications for medical and health care, frozen logistic, industrial safety control, smart buildings, smart home.",
+					"URL":"https://www.sinopulsar.com/",
+					"linkedinURL":"",
+					"twitterURL":"",
+					"fbURL":"https://www.facebook.com/sinopulsar"
+				},
+				{
+					"thumbURL":"/img/teams/QTM.png",
+					"name":"QT Medical, Inc.",
+					"tag":"Healthcare & Biomedical",
+					"des":"QT Medical is a medtech startup that will bring better care to millions of patients with heart disease.  PCA 500 is compact, wireless, wearable, digital, mobile and cloud-based. ",
+					"URL":"http://www.qtmedical.com/index_tw.html",
+					"linkedinURL":"https://www.linkedin.com/company/qt-medical-inc-/",
+					"twitterURL":"",
+					"fbURL":"https://www.facebook.com/qtmedical/"
+				}
+			]
+		},
+		{
+			"GroupTheme":"group-e",
+			"GroupName":"Internet of Things",
+			"GroupData":[
+				{
+					"thumbURL":"/img/teams/brilliant_optronics.png",
+					"name":"Brilliant Optronics",
+					"tag":"Internet of Things",
+					"des":"The multi-function smart window film can be directly attached on the existing glass, the glass thus can be selected between transparency, privacy protection, window tint and image display.",
+					"URL":"https://www.brilliantoptronics.com/",
 					"linkedinURL":"",
 					"twitterURL":"",
 					"fbURL":""
 				},
 				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/06/Mucker.jpeg",
-					"name":"Mucker Capital",
-					"tag":"VENTURE CAPITAL",
-					"des":"描述",
-					"URL":"http://www.muckercapital.com/",
+					"thumbURL":"/img/teams/catdid.png",
+					"name":"CatDID Technology CO.,LTD",
+					"tag":"Internet of Things",
+					"des":" iPetoi clean up dog stool and urine automatically and keep house clean and odorless. By using iPetoi, we find an elegant life style with our pets",
+					"URL":"https://www.ipetoi.com",
 					"linkedinURL":"",
 					"twitterURL":"",
 					"fbURL":""
 				},
 				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/05/Taiwania.png",
-					"name":"台杉投資",
-					"tag":"VENTURE CAPITAL",
-					"des":"描述",
-					"URL":"https://www.taiwaniacapital.com/",
+					"thumbURL":"/img/teams/emoji_wifi.png",
+					"name":"EmojiWiFi Co. Ltd.",
+					"tag":"Internet of Things",
+					"des":"We usher in an advertiser-supported, location-based, small but beautiful internet with bite-sized content and reward both venue and guest in a WiFi  session. We invented a win-win business model with WiFi Beacons and WiFi co-share.",
+					"URL":"http://EmojiWiFi.com",
 					"linkedinURL":"",
 					"twitterURL":"",
 					"fbURL":""
 				},
 				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/05/美商中經合LOGO-0913.png",
-					"name":"美商中經合集團",
-					"tag":"VENTURE CAPITAL",
-					"des":"描述",
-					"URL":"https://wiharper.com/",
+					"thumbURL":"/img/teams/hoyen.png",
+					"name":"Hoyen Tech Co., Ltd",
+					"tag":"Internet of Things",
+					"des":"Hoyen is IoT expert. We focus on TANMO smart door locks, access control and cloud system for managing your properties.",
+					"URL":"http://www.hoyentech.com/?fbclid=IwAR0kTRJNzwJ6YI1Rt_NoJsCut0zcVQhgaK7P5b4RnaRjtiyzHgy9ZAWSi50",
+					"linkedinURL":"",
+					"twitterURL":"https://twitter.com/hoyentech",
+					"fbURL":"https://www.facebook.com/hoyentech"
+				},
+				{
+					"thumbURL":"/img/teams/starwing.png",
+					"name":"STARWING Technology Co.",
+					"tag":"Internet of Things",
+					"des":"STARWING, the leading indoor positioning system provider in Taiwan, specializes in centimeter-level and 3D vert. ",
+					"URL":"https://www.starwing.com.tw/tw",
+					"linkedinURL":"",
+					"twitterURL":"",
+					"fbURL":"https://www.facebook.com/%E5%A4%A9%E5%A5%95%E7%A7%91%E6%8A%80%E5%AE%A4%E5%85%A7%E5%AE%9A%E4%BD%8D%E6%87%89%E7%94%A8%E5%B0%88%E5%AE%B6-1407123992731662/"
+				},
+				{
+					"thumbURL":"/img/teams/omnieyes.png",
+					"name":"OmniEyes",
+					"tag":"Internet of Things",
+					"des":"OmniEyes collects and digitizes live street videos, and converts them using AI technologies to various location-based information for real-time task execution and long-term statistics/data analytics",
+					"URL":"https://www.tsi.center/portfolio-item/taiwan-university-omnieyes/",
+					"linkedinURL":"",
+					"twitterURL":"",
+					"fbURL":""
+				},
+				{
+					"thumbURL":"/img/teams/gintel.png",
+					"name":"Gintel Tech Inc.",
+					"tag":"Internet of Things",
+					"des":"GINTEL TECH is an innovative company focusing on the transdisciplinary research. The system provides quick monitoring, prediction and pre-warning, notice of sources and providing non-toxic solutions to toxic concentrations and vibrio in the aquaculture water.",
+					"URL":"http://www.td.kyu.edu.tw/gintel/top.htm",
+					"linkedinURL":"",
+					"twitterURL":"",
+					"fbURL":""
+				},
+				{
+					"thumbURL":"/img/teams/lab_eatalot.png",
+					"name":"Lab Eatalot",
+					"tag":"Internet of Things",
+					"des":"Lab Eatalot keeps innovating and brings a revolution to Home security. Your privacy is and will always be our priority.  ",
+					"URL":"https://twomen2.wixsite.com/eatalot",
+					"linkedinURL":"",
+					"twitterURL":"",
+					"fbURL":""
+				},
+				{
+					"thumbURL":"/img/teams/organic_semiconductor_lab.png",
+					"name":"Organic Semiconductor Laboratory",
+					"tag":"Internet of Things",
+					"des":"Organic semiconductor laboratory hold many original patents are a leader in low-cost solution fabrication and device design.The products enter severalmarket demonstration projects since 2018.",
+					"URL":"https://workshopopv.weebly.com/",
+					"linkedinURL":"",
+					"twitterURL":"",
+					"fbURL":""
+				},
+				{
+					"thumbURL":"/img/teams/RS_lab.png",
+					"name":"Rong Seng Laboratories",
+					"tag":"Internet of Things",
+					"des":"Rong Seng Lab is founded by Prof. Rong Seng Chang in 1990. Smart Tag is our new solution for upgrading manufacturing industry with a tiny sticker.",
+					"URL":"http://www.dop.ncu.edu.tw/ch/research/laboratories_more/145",
+					"linkedinURL":"",
+					"twitterURL":"",
+					"fbURL":""
+				},
+				{
+					"thumbURL":"/img/teams/sim_power.png",
+					"name":"SIMpower",
+					"tag":"Internet of Things",
+					"des":"SIMpower develop Hyport. It  combines “Adapter , USB charger, HDMI,  Dongle, wireless charging pad”. Let the consumers only carry an accessory, and it can supports all functions.",
+					"URL":"http://www.simpower.com.tw/en/index.php",
 					"linkedinURL":"",
 					"twitterURL":"",
 					"fbURL":""
@@ -446,51 +412,82 @@
 			]
 		},
 		{
-			"GroupTheme":"group-e",
-			"GroupName":"ECOSYSTEM",
+			"GroupTheme":"group-a",
+			"GroupName":"Wearable Device",
 			"GroupData":[
 				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/05/AnchorTaiwan.png",
-					"name":"Anchor Taiwan",
-					"tag":"ECOSYSTEM",
-					"des":"描述",
-					"URL":"http://www.anchortaiwan.com/",
+					"thumbURL":"/img/teams/chasewind.png",
+					"name":"ChaseWind",
+					"tag":"Wearable Device",
+					"des":"ChaseWind cycling smart glasses are heads-up and transparent display for cyclists that connects to wireless sensors and provides GPS navigation, voice chat, and SOS alert notification services, which provides more interesting and safer cycling experience for cyclists.",
+					"URL":"http://chasewind.co/",
+					"linkedinURL":"https://www.linkedin.com/company/chasewind/about/",
+					"twitterURL":"",
+					"fbURL":""
+				},
+				{
+					"thumbURL":"/img/teams/fennec.png",
+					"name":"Fennec",
+					"tag":"Wearable Device",
+					"des":"Fennec Watch is world's first smartwatch designed for tweens. Fennec Messenger is available on smartphone and the Fennec Watch. Kids not yet ready for a smartphone can still enjoy sharing their lives.",
+					"URL":"https://www.fennec.me/en/",
+					"linkedinURL":"",
+					"twitterURL":"",
+					"fbURL":"https://www.facebook.com/fenneccorp"
+				},
+				{
+					"thumbURL":"/img/teams/ganzin.png",
+					"name":"GANZIN Technology, Eye Tracking Solutions",
+					"tag":"Wearable Device",
+					"des":"GANZIN, an award winning Taiwan startup with a breakthrough eye-tracking module – Aurora – promises to dramatically expand on how eye-tracking can play a beneficial role in our lives. ",
+					"URL":"https://ganzin.com.tw/",
+					"linkedinURL":"",
+					"twitterURL":"",
+					"fbURL":"https://www.facebook.com/Ganzin-Technology-%E8%A6%8B%E8%87%BB%E7%A7%91%E6%8A%80-2014459702178335"
+				},
+				{
+					"thumbURL":"/img/teams/jarvish.png",
+					"name":"JARVISH INC.",
+					"tag":"Wearable Device",
+					"des":"JARVISH is an innovative startup company established in 2014, is developing the world’s best mass-market smart safety helmets. ",
+					"URL":"https://www.jarvish.com/",
+					"linkedinURL":"",
+					"twitterURL":"https://twitter.com/JarvisHelmet",
+					"fbURL":"https://www.facebook.com/Intelligentwithin/"
+				},
+				{
+					"thumbURL":"/img/teams/paix.png",
+					"name":"PAIX Inc",
+					"tag":"Wearable Device",
+					"des":"Team of Paix was founded in 2015 with a vision to combine technology with our every day life. By bringing smart features to bags, we hope to make daily commute and travel easier and more versatile.",
+					"URL":"http://paixdesign.com/",
+					"linkedinURL":"https://www.linkedin.com/company/paix-inc./about/",
+					"twitterURL":"https://twitter.com/PAIXthebag",
+					"fbURL":"https://www.facebook.com/paixthebag/"
+				},
+				{
+					"thumbURL":"/img/teams/skin_elec.png",
+					"name":"Skin Elec",
+					"tag":"Wearable Device",
+					"des":"Skin Elec is an innovative start-up company focuses on skin microbiome editing. ",
+					"URL":"https://sss810621.wixsite.com/erichuanglab",
 					"linkedinURL":"",
 					"twitterURL":"",
 					"fbURL":""
 				},
 				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/05/5-e1529552349382.jpg",
-					"name":"Singularity University",
-					"tag":"ECOSYSTEM",
-					"des":"描述",
-					"URL":"https://su.org/",
+					"thumbURL":"/img/teams/uupsafety.png",
+					"name":"UUPSAFETY",
+					"tag":"Wearable Device",
+					"des":"UUPSAFETY provides high-quality personal protective equipment and systems for firefighters. Durability, comfort, safety, quality and innovation are hallmarks of our products. ",
+					"URL":"http://www.uupsafety.com.tw/#products/4",
 					"linkedinURL":"",
 					"twitterURL":"",
-					"fbURL":""
-				},
-				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/05/SVForum.png",
-					"name":"SVForum",
-					"tag":"ECOSYSTEM",
-					"des":"描述",
-					"URL":"https://siliconvalleyforum.com/",
-					"linkedinURL":"",
-					"twitterURL":"",
-					"fbURL":""
-				},
-				{
-					"thumbURL":"http://taiwanarena.tech/wp-content/uploads/2018/05/TAITRA.png",
-					"name":"TAITRA",
-					"tag":"ECOSYSTEM",
-					"des":"描述",
-					"URL":"http://www.taitra.org.tw/Index.aspx",
-					"linkedinURL":"",
-					"twitterURL":"",
-					"fbURL":""
+					"fbURL":"https://www.facebook.com/uupsafety/"
 				}
 			]
 		}
+
 	]	
 
 }

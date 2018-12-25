@@ -3,15 +3,17 @@ $(function(){
 
 	"use strict";
 
-	var element = $('.tta-recommand-articles');
+	var element = $('.tta-recommend-articles');
 	var type = element.attr('data-load-type')
+
+	var pagetitle;
 
 	var prevID,nextID;
 	var	METHOD,data_path,data_path2;
 
 	var _wrap;
-	var ariclewrap, recommandwrap;
-	var aricletype, recommandtype;
+	var ariclewrap, recommendwrap;
+	var aricletype, recommendtype;
 	var html;
 
 	var scope,title,content,id;
@@ -23,9 +25,11 @@ $(function(){
 		data_path = "/json/"+ type +"/data.json";
 		data_path2  = "/json/"+ type +"-data-table.json";
 
+		pagetitle = $('title')
+
 		scope = $('.tta-article');
 		ariclewrap = $('.tta-articles-load-wrap');
-		recommandwrap = $('.tta-recommand-articles .row')
+		recommendwrap = $('.tta-recommend-articles .row')
 		title = $('.article-title');
 		content = $('.article-content')
 
@@ -62,7 +66,7 @@ $(function(){
 			})
 			.done(function(data) {
 				console.log( "json get success " + data_path2 );
-				loadrecommand(data);
+				loadrecommend(data);
 			})
 			.fail(function() {
 				console.log( "json fail " +  data_path2 );
@@ -79,6 +83,7 @@ $(function(){
 			date = date[0];
 
 			type = type.toUpperCase()
+			pagetitle.text(a.title.rendered);
 
 			html = '<div id="post-'+a.id+'" class="tta-article"><div class="article-cate">'+type+'</div><div class="article-kv" style="background-image: url(/img/news/news01.png)"></div><div class="article-tag-container"><span class="tag">APAC</span><span class="date">'+date+'</span></div><div class="article-title">'+a.title.rendered+'</div><div class="article-social-links"> <a href="" target="_blank"><i class="fab fa-linkedin-in"></i></a> <a href="" target="_blank"><i class="fab fa-twitter"></i></a> <a href="" target="_blank"><i class="fab fa-facebook-f"></i></a> <a href="http://taiwanarena.tech/"><i class="fas fa-globe-americas"></i></a></div><div class="article-content">'+a.content.rendered+'</div><div class="article-nav-links"><a href="/news.html"><i class="link-classic flipped"></i> back</a><div class="article-nav"><a href="javacript:;"><i class="fal fa-angle-left"></i></a><a href="javacript:;"><i class="fal fa-angle-right"></i></a></div></div></div>';
 
@@ -86,9 +91,9 @@ $(function(){
 
 		}
 
-		var loadrecommand = function(data){
+		var loadrecommend = function(data){
 
-			_wrap = recommandwrap;
+			_wrap = recommendwrap;
 
 			
 			for(var i=0; i< 2; i++){

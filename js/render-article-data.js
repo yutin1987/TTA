@@ -3,14 +3,14 @@ $(function(){
 
 	"use strict";
 
-	var element = $('.tta-recommand-articles');
+	var element = $('.tta-recommend-articles');
 	var type = element.attr('data-load-type')
 
 	var prevID,nextID;
 	var	METHOD,data_path;
 
-	var ariclewrap, recommandwrap;
-	var aricletype, recommandtype;
+	var ariclewrap, recommendwrap;
+	var aricletype, recommendtype;
 
 	var scope,title,content,id;
 	var prev,next;
@@ -22,7 +22,7 @@ $(function(){
 
 		scope = $('.tta-article');
 		ariclewrap = $('.tta-articles-load-wrap');
-		recommandwrap = $('.tta-recommand-articles')
+		recommendwrap = $('.tta-recommend-articles')
 		title = $('.article-title');
 		content = $('.article-content')
 

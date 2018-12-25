@@ -9,6 +9,7 @@ $(function(){
 	var METHOD;
 	var data_path,data_path2;
 	var _wrap;
+	var html,linksgroup;
 	var _events_wrap, _news_wrap, _programs_wrap, _teams_wrap, 
 		_indexEvents_wrap, _indexNews_wrap;
 
@@ -103,7 +104,7 @@ $(function(){
 						console.log("Now in the events wrap.")
 
 						_wrap = _events_wrap;
-						_wrap.append('<div class="col-12 col-sm-6 col-md-3"><a class="tta-card" href="/events/'+a.url+'" target="_blank"><div class="thumbnail" style="background-image:url('+a.thumbURL+')"></div><div class="tag-container"><span class="tag">'+a.tag+'</span><span class="date">'+a.date+'</span></div><div class="tta-card-title">'+a.title+'</div><div class="tta-card-link"><i class="link-classic cyan__black"></i></div></a></div>');
+						_wrap.append('<div class="col-12 col-sm-6 col-md-3"><a class="tta-card" href="/events/'+a.url+'/" target="_blank"><div class="thumbnail" style="background-image:url('+a.thumbURL+')"></div><div class="tag-container"><span class="tag">'+a.tag+'</span><span class="date">'+a.date+'</span></div><div class="tta-card-title">'+a.title+'</div><div class="tta-card-link"><i class="link-classic cyan__black"></i></div></a></div>');
 
 						break;
 
@@ -111,7 +112,7 @@ $(function(){
 						console.log("Now in the news wrap.")
 
 						_wrap = _news_wrap;
-						_wrap.append('<div class="col-12 col-sm-6 col-md-3"><a class="tta-card" href="/news/'+a.url+'" target="_blank"><div class="thumbnail" style="background-image:url('+a.thumbURL+')"></div><div class="tag-container"><span class="tag">'+a.tag+'</span><span class="date">'+a.date+'</span></div><div class="tta-card-title">'+a.title+'</div><div class="tta-card-link"><i class="link-classic cyan__black"></i></div></a></div>');
+						_wrap.append('<div class="col-12 col-sm-6 col-md-3"><a class="tta-card" href="/news/'+a.url+'/" target="_blank"><div class="thumbnail" style="background-image:url('+a.thumbURL+')"></div><div class="tag-container"><span class="tag">'+a.tag+'</span><span class="date">'+a.date+'</span></div><div class="tta-card-title">'+a.title+'</div><div class="tta-card-link"><i class="link-classic cyan__black"></i></div></a></div>');
 
 
 						break;
@@ -130,7 +131,7 @@ $(function(){
 
 								var g = GroupData[j];
 
-								$(this).append('<div class="col-sm-6 col-md-4"><a class="tta-card" href="/programs/"><div class="thumbnail" style="background-image:url('+g.thumbURL+')"></div><div class="tag-container"><span class="tag">'+g.tag+'</span><span class="date">'+g.date+'</span></div><div class="tta-card-title">'+g.title+'</div></a></div>')
+								$(this).append('<div class="col-sm-6 col-md-4"><a class="tta-card" href="/programs/'+g.url+'/" target="_blank"><div class="thumbnail" style="background-image:url('+g.thumbURL+')"></div><div class="tag-container"><span class="tag">'+g.tag+'</span><span class="date">'+g.date+'</span></div><div class="tta-card-title">'+g.title+'</div></a></div>')
 
 							}
 
@@ -141,13 +142,45 @@ $(function(){
 					case "teams":
 						console.log("Now in the teams wrap.")
 
+
 						var GroupData = a.GroupData;
+
 
 						for(var j=0; j< GroupData.length; j++){
 
+							var sitehtml = "";
+							var linkedinhtml = "";
+							var twitterhtml = "";
+							var fbhtml = "";
+
 							var g = GroupData[j];
 							_wrap = _teams_wrap;
-							_wrap.append('<div class="col-sm-6 col-md-4"><div class="tta-card '+a.GroupTheme+'"><div class="thumbnail" style="background-image:url('+g.thumbURL+')"></div><div class="tta-card-content"><div class="tag">'+g.tag+'</div><div class="tta-card-title">'+g.name+'</div><div class="tta-card-des">'+g.des+'</div><div class="tta-link-group"> <a href="'+g.linkedinURL+'" target="_blank"s><i class="fab fa-linkedin-in"></i></a> <a href="'+g.twitterURL+'" target="_blank"s><i class="fab fa-twitter"></i></a> <a href="'+g.fbURL+'" target="_blank"s><i class="fab fa-facebook-f"></i></a> <a href="#" class="tta-arrow-link"></a></div></div></div></div>')			
+
+							var fblink = g.fbURL;
+							var sitelink = g.URL;
+							var linkedinlink = g.linkedinURL;
+							var twitterlink = g.twitterURL;
+
+							if( sitelink != undefined && sitelink !== "" ){
+								sitehtml = '<a href="'+sitelink+'" target="_blank"><i class="far fa-globe-americas"></i></a>'
+							}
+
+							if( linkedinlink != undefined && linkedinlink !== "" ){
+								linkedinhtml = '<a href="'+linkedinlink+'" target="_blank"><i class="fab fa-linkedin-in"></i></a>'
+							}
+
+							if( fblink != undefined && fblink !== "" ){
+								fbhtml = '<a href="'+fblink+'" target="_blank" s><i class="fab fa-facebook-f"></i></a>'
+							}
+
+							if( twitterlink != undefined && twitterlink !== "" ){
+								twitterhtml = '<a href="'+twitterlink+'" target="_blank"><i class="fab fa-twitter"></i></a>'
+							}
+
+							html =  '<div class="col-sm-6 col-md-4"> <div class="tta-card '+a.GroupTheme+'"> <div class="thumbnail" style="background-image:url('+g.thumbURL+')"></div><div class="tta-card-content"> <div class="tag">'+g.tag+'</div><div class="tta-card-title">'+g.name+'</div><div class="tta-card-des">'+g.des+'</div><div class="tta-link-group">'+sitehtml+linkedinhtml+twitterhtml+fbhtml+' </div></div></div></div>';						
+							
+							_wrap.append(html)
+
 						}
 
 						break;
@@ -156,9 +189,45 @@ $(function(){
 
 	    	}
 
-		}
+	    	if($(window).width() > 767){
 
-	}
+				(function( $ ) {
+				    // the sameHeight functions makes all the selected elements of the same height
+				    $.fn.sameHeight = function() {
+				        var selector = this;
+				        var heights = [];
+
+				        selector.each(function(){
+				            var height = $(this).height();
+				            heights.push(height);
+				        });
+
+				        // Get the biggest height
+				        var maxHeight = Math.max.apply(null, heights);
+				        // Show in the console to verify
+
+				        // Set the maxHeight to every selected element
+				        selector.each(function(){
+				            $(this).height(maxHeight);
+				        }); 
+
+				        $('.tta-teams .tta-link-group').css({"position":"absolute","bottom":"1.25rem"})
+				    };
+				 
+				}( jQuery ));
+				$('.tta-teams .tta-card-content').sameHeight();
+
+				$(window).resize(function(){
+				    // Do it when the window resizes too
+				    $('.tta-teams .tta-card-content').sameHeight();
+				});
+
+				}
+	    	}
+
+
+
+		}
 
 	var init = function(){
 
